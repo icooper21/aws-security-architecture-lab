@@ -39,7 +39,7 @@ Private instances use NAT Gateway for outbound internet access
 This project builds a secure and scalable Virtual Private Cloud (VPC) in AWS that separates public and private resources while following cloud security best practices.
 
 - Uses **public subnets** for internet-facing components and **private subnets** for internal workloads  
-- Deployed across **two Availability Zones** to improve availability and resilience  
+- Built across **two Availability Zones** to improve availability and resilience  
 - A **Bastion Host** in the public subnet provides controlled administrative access to private resources without exposing them directly to the internet  
 - An **Internet Gateway** manages internet traffic for public resources  
 - A **NAT Gateway** allows private subnet instances to access external services securely without being publicly reachable  
@@ -50,7 +50,7 @@ Overall, the design emphasizes **segmentation, controlled access, and reduced ex
 
 ## 🧭 Architecture Diagram
 
-The diagram below illustrates the VPC architecture deployed in this project, including public and private subnets across multiple Availability Zones.
+The diagram below illustrates the VPC architecture implemented in this project, including public and private subnets across multiple Availability Zones.
 
 ![AWS VPC Architecture Diagram](VPC-Architecture.png)
 
