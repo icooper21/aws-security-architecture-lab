@@ -1,7 +1,7 @@
 # 🛡️ AWS VPC Security Architecture Lab
 
 ## 📌 Overview
-Secure multi-tier AWS VPC architecture with public/private subnets, NAT Gateway, and least-privilege security design to simulate real-world cloud network segmenation and controlled application-to-database communication.
+Secure multi-tier AWS VPC architecture with public/private subnets, NAT Gateway, and least-privilege security design to simulate real-world cloud network segmentation and controlled application-to-database communication.
 
 ---
 
