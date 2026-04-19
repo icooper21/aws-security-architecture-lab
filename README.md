@@ -38,13 +38,13 @@ Private instances use NAT Gateway for outbound internet access
 
 This project builds a secure and scalable Virtual Private Cloud (VPC) in AWS that separates public and private resources while following cloud security best practices.
 
-- Uses **public subnets** for internet-facing components and **private subnets** for internal workloads  
+- Uses **public subnets** for internet-facing components and **private subnets** for internal systems  
 - Built across **two Availability Zones** to improve availability and resilience  
 - A **Bastion Host** in the public subnet provides controlled administrative access to private resources without exposing them directly to the internet  
 - An **Internet Gateway** manages internet traffic for public resources  
-- A **NAT Gateway** allows private subnet instances to access external services securely without being publicly reachable  
+- A **NAT Gateway** allows private EC2 instances to access external services securely without being publicly reachable  
 
-Overall, the design emphasizes **segmentation, controlled access, and reduced exposure of sensitive workloads**.
+Overall, the design emphasizes **segmentation, controlled access, and reducing exposure of sensitive data**.
 
 ---
 
