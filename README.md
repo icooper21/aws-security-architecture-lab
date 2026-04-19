@@ -34,7 +34,7 @@ Private instances use NAT Gateway for outbound internet access
 
 ---
 
-## AWS VPC Network Architecture
+## 🌐 AWS VPC Network Architecture
 
 This project builds a secure and scalable Virtual Private Cloud (VPC) in AWS that separates public and private resources while following cloud security best practices.
 
@@ -48,7 +48,7 @@ Overall, the design emphasizes **segmentation, controlled access, and reduced ex
 
 ---
 
-## Architecture Diagram
+## 🧭 Architecture Diagram
 
 The diagram below illustrates the VPC architecture deployed in this project, including public and private subnets across multiple Availability Zones.
 
