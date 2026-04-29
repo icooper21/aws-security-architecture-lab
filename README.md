@@ -45,6 +45,14 @@ This project simulates a secure multi-tier web application architecture in AWS.
 4. EC2 instances respond back through ALB
 5. Private instances access internet via NAT Gateway (outbound only)
 
+---
+
+## 🔐 Security Design Decisions
+
+- Private subnets prevent direct internet exposure
+- NAT Gateway used to restrict inbound access
+- Security groups limit traffic to only required ports (HTTP/HTTPS, SSH via bastion)
+- Separation of tiers reduces attack surface
 
 ---
 
