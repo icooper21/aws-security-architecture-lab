@@ -39,8 +39,12 @@ This project simulates a secure multi-tier web application architecture in AWS.
 
 ## 🔁 Traffic Flow
 
-Internet → Bastion → App Server → Database Server  
-Private instances use NAT Gateway for outbound internet access
+1. User sends request → Internet Gateway
+2. Traffic routed to Application Load Balancer (public subnet)
+3. ALB forwards request to EC2 instances (private subnet)
+4. EC2 instances respond back through ALB
+5. Private instances access internet via NAT Gateway (outbound only)
+
 
 ---
 
