@@ -5,6 +5,16 @@ Secure multi-tier AWS VPC architecture with public/private subnets, NAT Gateway,
 
 ---
 
+## 🧭 Architecture Overview
+This project simulates a secure multi-tier web application architecture in AWS.
+
+- Public subnets host internet-facing resources (ALB, Bastion)
+- Private subnets isolate application and backend systems
+- NAT Gateway enables outbound-only internet access
+- Security groups enforce least privilege access between tiers
+
+---
+
 ## 🏗️ Architecture Summary
 
 - Custom VPC (`10.0.0.0/16`)
