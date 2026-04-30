@@ -26,6 +26,15 @@ This project simulates a secure multi-tier web application architecture in AWS.
 
 ---
 
+## 🔁 Traffic Flow
+
+1. User sends request → Internet Gateway
+2. Traffic routed to Application Load Balancer (public subnet)
+3. ALB forwards request to EC2 instances (private subnet)
+4. EC2 instances respond back through ALB
+5. Private instances access internet via NAT Gateway (outbound only)
+
+
 ## 🔐 Security Design
 
 - Bastion Host: SSH access from My IP
@@ -37,24 +46,25 @@ This project simulates a secure multi-tier web application architecture in AWS.
 
 ---
 
-## 🔁 Traffic Flow
-
-1. User sends request → Internet Gateway
-2. Traffic routed to Application Load Balancer (public subnet)
-3. ALB forwards request to EC2 instances (private subnet)
-4. EC2 instances respond back through ALB
-5. Private instances access internet via NAT Gateway (outbound only)
-
----
-
-## 🔐 Security Design Decisions
+## ⚖️ Security Design Decisions
 
 - Private subnets prevent direct internet exposure
 - NAT Gateway used to restrict inbound access
 - Security groups limit traffic to only required ports (HTTP/HTTPS, SSH via bastion)
 - Separation of tiers reduces attack surface
 
+
 ---
+
+## 🛠️ Challenges & Troubleshooting
+
+- Issue: EC2 instance not reachable
+  - Cause: Incorrect route table association
+  - Fix: Updated route table to include IGW route
+
+- Issue: SSH access failed
+  - Cause: Security group blocked port 22
+  - Fix: Adjusted inbound rule
 
 ## 🌐 AWS VPC Network Architecture
 
